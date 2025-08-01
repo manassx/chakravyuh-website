@@ -349,7 +349,7 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 7.5rem 0 0 0;
+    padding: 7.5rem 0;
     max-width: 80rem;
 }
 
@@ -363,7 +363,6 @@ img {
 }
 
 .ckv_btns {
-    padding-top: 7.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -432,4 +431,100 @@ img {
     color: #ffffff;
     max-width: 120rem;
     margin: 0 auto;
+}
+
+
+/* media query for mobile */
+
+@media (min-width: 320px){
+    html{
+        font-size: 8px;
+    }
+ .sidebar{
+    display: none;
+ }
+ .ckv_menu{
+    display: none;
+ }
+ .menu_toggle{
+    width: 11rem;
+ }
+
+ .bar_corner{
+    width: 3rem;
+ }
+ .bar_center{
+    width: 4rem;
+ }
+ .menu_toggle:hover .bar_center{
+    width: 3rem;
+ }
+ .ckv_header_section .ckv_logo img {
+    width: 10rem;
+}
+.ckv_header_section{
+    justify-content: space-evenly;
+}
+.ckv_banner{
+    padding: 0 1rem;
+}
+.ckv_banner .ckv_banner_content h1 {
+    font-size: 4rem;
+}
+.ckv_banner .ckv_banner_content h3{
+    padding-bottom: 2rem;
+}
+.ckv_fnote{
+    padding: 8rem 0rem;
+}
+
+.ckv_fnote_ctnt{
+    padding: 3rem;
+    border-radius: 0rem;
+}
+}
+
+@media (min-width: 768px) {
+    .container-outter{
+        max-width: 600px;
+    }
+    
+     .sidebar{
+    display: flex;
+ }
+ .ckv_menu{
+    display: flex;
+ }
+ .ckv_fnote{
+    padding: 8rem 2.5rem;
+}
+ .ckv_fnote_ctnt{
+    padding: 5rem;
+    border-radius: 2.8rem;
+}
+ .menu_toggle{
+    width: 27rem;
+ }
+  .bar_corner{
+    width: 4rem;
+ }
+ .bar_center{
+    width: 8rem;
+ }
+ .menu_toggle:hover .bar_center{
+    width: 4rem;
+ }
+ .ckv_header_section .ckv_logo img {
+    width: 15rem;
+}
+
+}
+
+@media (min-width: 1024px){
+    html{
+        font-size: 62.5%;
+    }
+.container-outter {
+        max-width:1000px;
+    }
 }
